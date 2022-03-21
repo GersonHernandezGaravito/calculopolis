@@ -159,8 +159,10 @@ def static_dir(path):
 
 k.respond("load aiml b")
 
+port = int(os.environ.get("PORT", 17995))
+
 WebSocketServer(
-    ('https://calculopolis.herokuapp.com/',33507),
+    ('0.0.0.0',port),
 
     Resource([
         ('^/chat', ChatApplication),
