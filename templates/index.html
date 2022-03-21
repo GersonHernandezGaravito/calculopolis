@@ -107,7 +107,7 @@
       
 
       var nickname = $('.nickname').val();
-      var ws = new WebSocket('ws://' + window.location.hostname +':33507/chat');
+      var ws = new WebSocket('ws://' + window.location.hostname +':17995/chat');
 
       ws.onopen = function () { $('.connecting_status').text('Online'); }
       ws.onclose = function () { $('.connecting_status').text('Offline'); }
