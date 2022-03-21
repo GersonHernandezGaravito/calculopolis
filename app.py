@@ -19,6 +19,9 @@ import os
 #python3.7 -m pip install python-aiml
 import aiml
 
+import time
+time.clock = time.time
+
 monkey.patch_all()
 
 # Para la interfaz y otras cosas
