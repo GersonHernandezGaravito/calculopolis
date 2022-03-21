@@ -160,7 +160,7 @@ def static_dir(path):
 k.respond("load aiml b")
 
 WebSocketServer(
-    ('0.0.0.0', 33507),
+    (33507),
 
     Resource([
         ('^/chat', ChatApplication),
