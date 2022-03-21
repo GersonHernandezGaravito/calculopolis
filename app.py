@@ -159,10 +159,10 @@ def static_dir(path):
 
 k.respond("load aiml b")
 
-#port = int(os.environ.get("PORT", 17995))
+port = int(os.environ.get("PORT", 17995))
 
 WebSocketServer(
-    ('0.0.0.0',17995),
+    ('0.0.0.0',port),
 
     Resource([
         ('^/chat', ChatApplication),
