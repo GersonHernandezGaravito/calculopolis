@@ -160,7 +160,7 @@ def static_dir(path):
 k.respond("load aiml b")
 
 WebSocketServer(
-    (33507),
+    ('https://calculopolis.herokuapp.com/',33507),
 
     Resource([
         ('^/chat', ChatApplication),
