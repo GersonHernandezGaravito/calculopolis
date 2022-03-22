@@ -104,11 +104,11 @@
       <script type="text/javascript" src="static/js/app.js"></script>
 
     <script>
-      var host = location.origin.replace(/^http/, 'ws');
+      var host = location.origin.replace(/^https/, 'ws');
       console.log(window.location.hostname +' --- ' + host)
       var nickname = $('.nickname').val();
       //var ws = new WebSocket('ws://' + window.location.hostname +':' + window.location.port +'/chat');
-      var ws = new WebSocket('ws://chatbot-lovita.herokuapp.com/');
+      var ws = new WebSocket('ws://chatbot-lovita.herokuapp.com/chat');
       ws.onopen = function () { $('.connecting_status').text('Online'); }
       ws.onclose = function () { $('.connecting_status').text('Offline'); }
       
