@@ -105,10 +105,10 @@
 
     <script>
       
-
+      console.log(window.location.hostname +' --- ' + window.location.port)
       var nickname = $('.nickname').val();
       var ws = new WebSocket('ws://' + window.location.hostname +':' + window.location.port +'/chat');
-      console.log(window.location.hostname +' --- ' + window.location.port)
+  
       ws.onopen = function () { $('.connecting_status').text('Online'); }
       ws.onclose = function () { $('.connecting_status').text('Offline'); }
       
